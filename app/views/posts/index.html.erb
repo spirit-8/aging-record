@@ -6,3 +6,8 @@
   <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
   <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
 <% end %>
+<div>
+  <% @posts.each do |post| %>
+    <%= image_tag post.image %>
+  <% end %>
+</div>
